@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprinzen — Agile Scrum Estimation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              ink: "#0b0d12",
+              panel: "rgba(255,255,255,0.04)",
+              brand: { 500: "#7c5cff", 600: "#6841ff" },
+            },
+            boxShadow: { glow: "0 0 40px rgba(124,92,255,0.25)" },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-ink text-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
