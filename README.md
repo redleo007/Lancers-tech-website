@@ -1,4 +1,6 @@
-# Sprinzen 🌀
+![SPRINTZEN logo](frontend/src/assets/sprintzen-logo.svg)
+
+# SPRINTZEN 🌀
 
 A modern full-stack **Agile Scrum Estimation** web app — Planning Poker, live Kanban,
 shared notes, and timeline analytics for high-performing software teams.

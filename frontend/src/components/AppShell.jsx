@@ -1,5 +1,6 @@
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
+import Logo from "../assets/sprintzen-logo.svg";
 
 const links = [
   { to: "/dashboard", label: "Dashboard", icon: "🏠" },
@@ -15,8 +16,8 @@ export default function AppShell() {
   return (
     <div className="min-h-screen flex">
       <aside className="w-64 p-4 glass m-3 rounded-2xl flex flex-col">
-        <div className="text-2xl font-bold mb-6 bg-gradient-to-r from-brand-500 to-cyan-400 bg-clip-text text-transparent">
-          Sprinzen
+        <div className="mb-6 flex items-center gap-3">
+          <img src={Logo} alt="SPRINTZEN" className="h-12 w-auto" />
         </div>
         <nav className="space-y-1 flex-1">
           {links.map((l) => (
